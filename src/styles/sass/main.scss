@@ -1,5 +1,25 @@
-* {
-  margin: 10;
-  padding: 0;
-  box-sizing: border-box;
-}
+@use 'base/normalize';
+@use 'base/root';
+@use 'base/base';
+@use 'base/typography';
+@use 'abstracts/breakpoints';
+@use 'abstracts/functions';
+@use 'abstracts/mixins';
+@use 'abstracts/placeholders';
+@use 'abstracts/variables';
+@use 'components/article';
+@use 'components/buttons';
+@use 'components/label';
+@use 'components/burgerMenu';
+@use 'layout/index';
+@use 'layout/navegation';
+@use 'layout/main';
+@use 'layout/asidebar';
+@use 'layout/footer';
+@use 'layout/forms';
+@use 'layout/grid';
+@use 'pages/home';
+@use 'pages/about';
+@use 'pages/contact';
+@use 'pages/projects';
+

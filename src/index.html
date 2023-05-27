@@ -28,21 +28,28 @@
     <title>web-development-journey-V2</title>
   </head>
   <body>
-    <header>
+    <header class="headerGlobal">
       <div class="logo">
-        <h2>Deo </h2>
-        <nav>
-          <a href="http://">Home</a>
-          <a href="http://">About</a>
-          <a href="http://">Projects</a>
-          <a href="http://">Blog</a>
-          <a href="http://">contacts</a>
-        </nav>
+        <h2>Deo</h2>
       </div>
+      <nav class="menuNavegation">
+        <a href="http://">Home</a>
+        <a href="http://">About</a>
+        <a href="http://">Projects</a>
+        <a href="http://">Blog</a>
+        <a href="http://">contacts</a>
+      </nav>
     </header>
 
-    <aside>
-      <div id="main-nav" class="main-nav">
+    <aside class="asideGlobal">
+      <div id="burger-menu">
+        <div class="burgerMenu">
+          <span class="bar one"></span>
+          <span class="bar two"></span>
+          <span class="bar three"></span>
+        </div>
+      </div>
+      <div id="menuNavegationAside" class="menuNavegationAside">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -50,15 +57,6 @@
           <li><a href="#">Contact</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
-        <!-- .main-menu -->
-      </div>
-      <div class="hamburger">
-        <a
-          href="javascript:void(0);"
-          class="icon"
-          onclick="hamburguerFunction()">
-          <i class="fa fa-signal fa-rotate-270"></i>
-        </a>
       </div>
     </aside>
 
@@ -73,5 +71,15 @@
       <i class="fa-regular fa-copyright"></i>
       <p>Copyright - Deolindo Baptista | Todos os direitos reservados</p>
     </footer>
+
+    <!-- Referência ao arquivo de script externo -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let burgerMenu = document.getElementById("burger-menu");
+        burgerMenu.addEventListener("click", function () {
+          this.classList.toggle("open");
+        });
+      });
+    </script>
   </body>
 </html>
