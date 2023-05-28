@@ -13,14 +13,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Import Favicon -->
     <link rel="icon" href="./assets/images/deo_icon.ico" type="image/x-icon" />
-    <!-- IMPORT FONT AWESOME: -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap"
-      rel="stylesheet" />
     <!-- font awesome links -->
     <link
       rel="stylesheet"
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <!-- IMPORT RESET CSS: -->
     <link rel="stylesheet" href="./styles/sass/base/normalize.css" />
     <!-- IMPORT CSS style  -->
@@ -32,38 +31,58 @@
       <div class="logo">
         <h2>Deo</h2>
       </div>
-      <nav class="menuNavegation">
+      <nav class="menuNavigation">
         <a href="http://">Home</a>
         <a href="http://">About</a>
         <a href="http://">Projects</a>
         <a href="http://">Blog</a>
-        <a href="http://">contacts</a>
+        <a href="http://">Contacts</a>
+        <div class="search">
+          <i class="fas fa-search" onclick="toggleSearch()"></i>
+          <form id="searchForm" onsubmit="submitSearch(event)">
+            <input type="text" placeholder="Search" id="searchInput" />
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
       </nav>
     </header>
 
     <aside class="asideGlobal">
-      <div id="burger-menu">
-        <div class="burgerMenu">
-          <span class="bar one"></span>
-          <span class="bar two"></span>
-          <span class="bar three"></span>
+      <div class="menuNavigationAsideGlobal">
+        <div id="burger-menu">
+          <div class="burgerMenu">
+            <span class="bar one"></span>
+            <span class="bar two"></span>
+            <span class="bar three"></span>
+          </div>
+        </div>
+        <div id="menuNavigationAside" class="menuNavigationAside">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
         </div>
       </div>
-      <div id="menuNavegationAside" class="menuNavegationAside">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
+      <div class="menuNavigationAsideMedia">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-instagram"></i>
       </div>
     </aside>
 
-    <main>
-      <section>
-        <h1>Deolindo Baptista</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <main class="mainGloba">
+      <section class="sectionGlobal">
+        <h1>Deolindo <span>Baptista</span></h1>
+        <p>
+          Explore the magic of the web through the eyes of a passionate
+          developer, where every line of code comes to life and shapes the
+          online experience.
+        </p>
       </section>
     </main>
 
@@ -73,6 +92,7 @@
     </footer>
 
     <!-- Referência ao arquivo de script externo -->
+    <!-- <script src="./src/scripts/_scripts.js"></script> -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         let burgerMenu = document.getElementById("burger-menu");
@@ -80,6 +100,19 @@
           this.classList.toggle("open");
         });
       });
+
+      function toggleSearch() {
+        let searchContainer = document.querySelector(".menuNavigation .search");
+        searchContainer.classList.toggle("active");
+        document.getElementById("searchInput").focus();
+      }
+
+      function submitSearch(event) {
+        event.preventDefault();
+        let searchQuery = document.getElementById("searchInput").value;
+        // Lógica de pesquisa aqui - substitua com a lógica real do seu site
+        alert("Pesquisando por: " + searchQuery);
+      }
     </script>
   </body>
 </html>
