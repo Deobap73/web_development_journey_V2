@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener("DOMContentLoaded", function () {
   let burgerMenu = document.getElementById("burger-menu");
   burgerMenu.addEventListener("click", function () {
@@ -6,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function toggleSearch() {
-  let searchContainer = document.querySelector(".menuNavegation .search");
+  let searchContainer = document.querySelector(".menuNavigation .search");
   searchContainer.classList.toggle("active");
   document.getElementById("searchInput").focus();
 }
@@ -14,6 +16,6 @@ function toggleSearch() {
 function submitSearch(event) {
   event.preventDefault();
   let searchQuery = document.getElementById("searchInput").value;
-  // Lógica de pesquisa aqui - substitua com a lógica real do seu site
+
   alert("Pesquisando por: " + searchQuery);
 }

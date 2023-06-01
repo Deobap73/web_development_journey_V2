@@ -11,8 +11,9 @@
   width: 100px;
   height: 100vh;
   background-color: transparent;
-  border-right: 1px solid $color_2;
-  .menuNavegationAsideMedia {
+  border-right: 2px solid $color_2;
+  box-shadow: 0px 0px 2px 1px $color_4;
+  .menuNavigationAsideMedia {
     display: flex;
     flex-direction: column;
     align-items: center;

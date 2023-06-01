@@ -42,3 +42,44 @@ body {
     font-weight:200;
   }
 }
+
+.sectionPresentationsboxparagraph{
+  font-size: 1em;
+  text-align: center;
+}
+
+.mainSectionAboutMe{
+  .mainSectionAboutMeTitle{
+    text-align: center;
+    .mainSectionPresentationTitle{
+      font-size: 4rem;
+      text-transform:uppercase;
+      &::after {
+        content: 'me';
+        color: $color_3;
+      }
+    }
+  }
+  .subMainPersonalInfosDetails{
+    font-size: 1em;
+    font-weight:200;
+  }
+  .subMainPersonalProjectsBoxContentNumber {
+    font-size: 3em;
+    width: 95%;
+    margin: 0 .2em;
+    padding: 0;
+    color: $color_3;
+    }
+    .subMainPersonalProjectsBoxContentInfo{
+      font-size: 1.5em;
+    }
+}
+.mainSectionProjectsTitle,
+.mainSectionProjectsAllProjects {
+  h2,
+  a{
+    font-size: 3em;
+  }
+}
+

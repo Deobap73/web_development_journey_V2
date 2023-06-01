@@ -1,18 +1,215 @@
 @use "../abstracts/colors" as *;
-.mainGloba{
-  // border: 2px solid red;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 95vh;
+
+.mainSectionPresentation {
+  height: 110vh;
   background: $background_1;
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center bottom;
   .sectionGlobal {
-    width: 28rem;
-    margin-right: 10%;
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 80vh;
+    h1,
+    p {
+      width: 31.25rem;
+      margin-right: 10%;
+      text-align: justify;
+    }
+  }
+  .sectionPresentations {
+    // border: 2px solid rgb(0, 255, 21);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 30vh;
+    background: $background-color_4;
+    backdrop-filter: blur(90px);
+    .sectionPresentationsbox {
+      // border: 2px solid rgb(0, 17, 255);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-basis: 20%;
+      margin: 0.5em;
+      .sectionPresentationsboxImage {
+        max-width: 50%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.mainSectionAboutMe {
+  display: flex;
+  flex-direction: column;
+  margin: 10rem 0 0 5.25rem;
+  .mainSectionAboutMeContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem 0;
+    .sectionMainSectionAboutMe {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0.5em;
+    }
+    .mainPersonalInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 35vw;
+      min-width: 18.75rem;
+      .mainPersonalInfoTitle {
+        margin-left: 1em;
+      }
+      .subMainPersonalInfos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 98%;
+
+        .subMainPersonalInfosDetails {
+          width: 13vw;
+          min-width: 10em;
+          margin: 1em 0;
+        }
+      }
+      .mainPersonaDownloadCv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2em 0;
+        width: 22em;
+        height: 4em;
+        border-radius: 30em;
+        overflow: hidden;
+        border: 2px solid $color_1;
+        box-shadow: 2px 2px 2px 1px $color_4;
+        h2 {
+          margin: 2em;
+        }
+      }
+    }
+
+    .mainPersonalProjects {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      width: 35vw;
+      min-width: 18.75rem;
+      .subMainPersonalProjectsBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        border-right: 2px solid $color_2;
+        box-shadow: 0px 0px 1px 1px $color_4;
+        width: 45%;
+        height: 45%;
+        .subMainPersonalProjectsBoxContentInfo {
+          margin-left: 3em;
+        }
+      }
+    }
+    .mainPersonalContacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 4rem;
+      min-width: 4rem;
+      margin: 0;
+    }
+  }
+}
+
+.mainSectionProjects {
+  position: relative;
+  height: 120vh;
+  margin: 10rem;
+  .mainSectionProjectsTitle,
+  .mainSectionProjectsAllProjects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 37.125rem;
+    height: 14.062rem;
+    min-width: 18.75rem;
+    min-height: 14.062rem;
+  }
+  .mainSectionProjectsProjects {
+    position: absolute;
+    width: 37.125rem;
+    height: 37.125rem;
+    min-width: 18.75rem;
+    min-height: 18.75rem;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 2px 0px 4px 1px $color_3;
+  }
+  .mainSectionProjectsOne {
+    left: 47rem;
+    position: relative;
+    overflow: hidden;
+    h2 {
+      margin: 1.25rem 3rem;
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-40%, 18%) rotate(15deg) scale(1.8);
+    }
+  }
+  .mainSectionProjectsTwo {
+    bottom: 22rem;
+    position: relative;
+    overflow: hidden;
+    h2 {
+      margin: 1.25rem 3rem;
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      transform: scale(1.8);
+    }
+  }
+  .mainSectionProjectsThree {
+    bottom: 30rem;
+    left: 47rem;
+    position: relative;
+    overflow: hidden;
+    h2 {
+      margin: 1.25rem 3rem;
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-45%, 18%) rotate(5deg) scale(1.5);
+    }
+  }
+  .mainSectionProjectsAllProjects {
+    position: relative;
+    bottom: 50rem;
+    a {
+      text-decoration: none;
+      color: $color_3;
+      &:hover {
+        border-bottom: 2px solid $color_1;
+      }
+      & :active,
+      :visited {
+        color: $color_3;
+      }
+    }
   }
 }
