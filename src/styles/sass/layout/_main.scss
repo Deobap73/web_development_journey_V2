@@ -1,4 +1,5 @@
 @use "../abstracts/colors" as *;
+@use "../abstracts/hyperlinks" as *;
 
 .mainSectionPresentation {
   height: 110vh;
@@ -22,7 +23,6 @@
     }
   }
   .sectionPresentations {
-    // border: 2px solid rgb(0, 255, 21);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -30,7 +30,6 @@
     background: $background-color_4;
     backdrop-filter: blur(90px);
     .sectionPresentationsbox {
-      // border: 2px solid rgb(0, 17, 255);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -47,7 +46,7 @@
 .mainSectionAboutMe {
   display: flex;
   flex-direction: column;
-  margin: 10rem 0 0 5.25rem;
+  margin: 10rem 5.25rem;
   .mainSectionAboutMeContent {
     display: flex;
     flex-wrap: wrap;
@@ -128,88 +127,164 @@
     }
   }
 }
-
 .mainSectionProjects {
-  position: relative;
-  height: 120vh;
+  background: $background-color_4;
+  .mainSectionProjectsContainer {
+    display: grid;
+    grid-template-columns: 1.4fr 0.2fr 1.4fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-auto-columns: 1fr;
+    gap: 0em 0em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "mainSectionProjectsTitle . mainSectionProjectsOne"
+      ". . mainSectionProjectsOne"
+      "mainSectionProjectsTwo . mainSectionProjectsOne"
+      "mainSectionProjectsTwo . ."
+      "mainSectionProjectsTwo . mainSectionProjectsThree"
+      ". . mainSectionProjectsThree"
+      "mainSectionProjectsAllProjects . mainSectionProjectsThree";
+    margin: 10rem 5.25rem;
+    align-items: stretch;
+    justify-items: stretch;
+    .mainSectionProjectsTitle {
+      grid-area: mainSectionProjectsTitle;
+      margin-top: 4rem;
+    }
+    .mainSectionProjectsOne {
+      margin-top: 4rem;
+      grid-area: mainSectionProjectsOne;
+      img {
+        transform: translate(1%, 25%) rotate(5deg) scale(1.1);
+      }
+    }
+    .mainSectionProjectsTwo {
+      grid-area: mainSectionProjectsTwo;
+      img {
+        transform: translate(1%, 25%) rotate(-10deg) scale(1.1);
+      }
+    }
+    .mainSectionProjectsThree {
+      grid-area: mainSectionProjectsThree;
+      margin-bottom: 4rem;
+      img {
+        transform: translate(1%, 10%) rotate(2deg) scale(1);
+      }
+    }
+    .mainSectionProjectsAllProjects {
+      grid-area: mainSectionProjectsAllProjects;
+      margin-bottom: 4rem;
+    }
+    .mainSectionProjectsTitle,
+    .mainSectionProjectsOne,
+    .mainSectionProjectsTwo,
+    .mainSectionProjectsThree,
+    .mainSectionProjectsAllProjects {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-around;
+      padding: 0 2em;
+      overflow: hidden;
+      border-radius: 2em;
+      border-right: 2px solid $color_2;
+      box-shadow: 0px 0px 1px 1px $color_4;
+    }
+  }
+}
+
+.mainSectionBlog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 10rem;
-  .mainSectionProjectsTitle,
-  .mainSectionProjectsAllProjects {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    width: 37.125rem;
-    height: 14.062rem;
+  .mainSectionBlogFirstTitle {
+    color: $color_3;
+  }
+  .mainSectionBlogdescriptionTitle {
+    width: 37.5rem;
     min-width: 18.75rem;
-    min-height: 14.062rem;
+    text-align: center;
+    margin-bottom: 5em;
   }
-  .mainSectionProjectsProjects {
-    position: absolute;
-    width: 37.125rem;
-    height: 37.125rem;
-    min-width: 18.75rem;
-    min-height: 18.75rem;
-    overflow: hidden;
-    border-radius: 50px;
-    box-shadow: 2px 0px 4px 1px $color_3;
-  }
-  .mainSectionProjectsOne {
-    left: 47rem;
-    position: relative;
-    overflow: hidden;
-    h2 {
-      margin: 1.25rem 3rem;
-    }
-    img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-40%, 18%) rotate(15deg) scale(1.8);
-    }
-  }
-  .mainSectionProjectsTwo {
-    bottom: 22rem;
-    position: relative;
-    overflow: hidden;
-    h2 {
-      margin: 1.25rem 3rem;
-    }
-    img {
-      position: absolute;
-      top: 50%;
-      transform: scale(1.8);
-    }
-  }
-  .mainSectionProjectsThree {
-    bottom: 30rem;
-    left: 47rem;
-    position: relative;
-    overflow: hidden;
-    h2 {
-      margin: 1.25rem 3rem;
-    }
-    img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-45%, 18%) rotate(5deg) scale(1.5);
-    }
-  }
-  .mainSectionProjectsAllProjects {
-    position: relative;
-    bottom: 50rem;
-    a {
-      text-decoration: none;
-      color: $color_3;
-      &:hover {
-        border-bottom: 2px solid $color_1;
+
+  .mainSectionBlogContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr;
+    grid-auto-columns: 1fr;
+    gap: 2rem 2rem;
+    grid-auto-flow: row;
+    grid-template-areas: "latestArticle secondOldArticle oldArticles";
+    .mainSectionBlogContainerLatestArticle,
+    .mainSectionBlogContainerSecondOldArticle,
+    .mainSectionBlogContainerOldArticles {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 41.5rem;
+      .mainSectionBlogContainerArticlesDate {
+        position: absolute;
+        width: 150px;
+        height: 50px;
+        background-color: $background-color_5;
       }
-      & :active,
-      :visited {
-        color: $color_3;
+      .mainSectionBlogContainerArticlesImage {
+        max-width: 100%;
+        height: 50%;
       }
+      .mainSectionBlogContainerArticlesArticle {
+        height: 40%;
+      }
+    }
+    .mainSectionBlogContainerLatestArticle {
+      grid-area: latestArticle;
+    }
+    .mainSectionBlogContainerSecondOldArticle {
+      grid-area: secondOldArticle;
+    }
+    .mainSectionBlogContainerOldArticles {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 2em 2em;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "thirdOldArticle"
+        "fourthOldArticle"
+        "fifthOldArticle";
+      grid-area: oldArticles;
+    }
+    .mainSectionBlogContainerThirdOldArticle,
+    .mainSectionBlogContainerFourthOldArticle,
+    .mainSectionBlogContainerFifthOldArticle {
+      position: relative;
+      display: flex;
+      height: 12.5rem;
+      background-color: $background-color_5;
+      .mainSectionBlogContainerOldArticlesDate {
+        position: absolute;
+        width: 150px;
+        height: 50px;
+        background-color: $background-color_5;
+      }
+      .mainSectionBlogContainerOldArticlesImage {
+        max-width: 50%;
+        height: 100%;
+      }
+      .mainSectionBlogContainerArticlesOldArticle {
+        height: 90%;
+      }
+    }
+    .mainSectionBlogContainerThirdOldArticle {
+      grid-area: thirdOldArticle;
+    }
+    .mainSectionBlogContainerFourthOldArticle {
+      grid-area: fourthOldArticle;
+    }
+    .mainSectionBlogContainerFifthOldArticle {
+      grid-area: fifthOldArticle;
     }
   }
 }

@@ -19,3 +19,20 @@ function submitSearch(event) {
 
   alert("Pesquisando por: " + searchQuery);
 }
+
+
+
+window.onload = function() {
+  let paragraphs = document.getElementsByClassName("mainSectionBlogContainerArticlesOldAArticleBlogArticle");
+
+  for (let i = 0; i < paragraphs.length; i++) {
+    let paragraph = paragraphs[i];
+    let words = paragraph.textContent.trim().split(" ");
+    let shortenedText = words.slice(0, 50).join(" ") + "...";
+    paragraph.textContent = shortenedText;
+
+    paragraph.addEventListener("click", function() {
+      window.location.href = "blog.html";
+    });
+  }
+};

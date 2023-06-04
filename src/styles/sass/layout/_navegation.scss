@@ -12,18 +12,6 @@
   &.search form {
     display: none;
   }
-  a {
-    margin-right: 5.25rem; /* Espaço entre cada elemento na horizontal */
-    text-decoration: none;
-    color: $color_1;
-    &:hover {
-      border-bottom: 2px solid $color_3;
-    }
-    & :active,
-    :visited {
-      color: $color_1;
-    }
-  }
   .search {
     form {
       display: none;

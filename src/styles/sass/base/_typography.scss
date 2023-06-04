@@ -31,7 +31,6 @@ body {
 
 .sectionGlobal {
   h1 {
-    
     font-size: 4rem;
     line-height: 1;
     & span {
@@ -39,47 +38,79 @@ body {
     }
   }
   p {
-    font-weight:200;
+    font-weight: 200;
   }
 }
 
-.sectionPresentationsboxparagraph{
+
+.sectionPresentationsboxparagraph {
   font-size: 1em;
   text-align: center;
 }
 
-.mainSectionAboutMe{
-  .mainSectionAboutMeTitle{
+.mainSectionAboutMe {
+  .mainSectionAboutMeTitle {
     text-align: center;
-    .mainSectionPresentationTitle{
+    .mainSectionPresentationTitle {
       font-size: 4rem;
-      text-transform:uppercase;
+      text-transform: uppercase;
       &::after {
-        content: 'me';
+        content: "me";
         color: $color_3;
       }
     }
   }
-  .subMainPersonalInfosDetails{
+  .subMainPersonalInfosDetails {
     font-size: 1em;
-    font-weight:200;
+    font-weight: 200;
   }
   .subMainPersonalProjectsBoxContentNumber {
     font-size: 3em;
     width: 95%;
-    margin: 0 .2em;
+    margin: 0 0.2em;
     padding: 0;
     color: $color_3;
-    }
-    .subMainPersonalProjectsBoxContentInfo{
-      font-size: 1.5em;
-    }
+  }
+  .subMainPersonalProjectsBoxContentInfo {
+    font-size: 1.5em;
+  }
 }
 .mainSectionProjectsTitle,
 .mainSectionProjectsAllProjects {
   h2,
-  a{
+  a {
     font-size: 3em;
   }
 }
 
+.mainSectionBlog {
+  .mainSectionBlogContainerLatestArticle,
+  .mainSectionBlogContainerSecondOldArticle,
+  .mainSectionBlogContainerOldArticles {
+    .mainSectionBlogContainerArticlesDate {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color_3;
+    }
+    .mainSectionBlogContainerArticlesArticleTitle,
+    .mainSectionBlogContainerHyperlinks {
+      color: $color_3;
+      margin: 0.5em 2em;
+    }
+    .mainSectionBlogContainerArticlesArticleBlogArticle {
+      margin: 0 2em;
+      text-align: justify;
+    }
+  }
+  .mainSectionBlogContainerArticlesOldArticleTitle {
+    color: $color_3;
+    margin: 0.5em .5em;
+    font-size: 1.16em;
+  }
+  .mainSectionBlogContainerArticlesOldAArticleBlogArticle{
+    margin: 0.5em .5em;
+    font-size: .8em;
+    text-align: justify;
+  }
+}

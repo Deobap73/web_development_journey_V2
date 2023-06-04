@@ -1,0 +1,53 @@
+@use "../abstracts/colors" as *;
+
+.menuNavigation{
+   a {
+    margin-right: 5.25rem; /* Espaço entre cada elemento na horizontal */
+    text-decoration: none;
+    color: $color_1;
+    &:hover {
+      border-bottom: 2px solid $color_3;
+    }
+    & :active,
+    :visited {
+      color: $color_1;
+    }
+  }
+ }
+
+ .menuNavigationAside{
+  a {
+    color: $color_1;
+    &:hover {
+      border-bottom: 2px solid $color_3;
+    }
+    & :active,
+    :visited {
+      color: $color_1;
+    }
+  }
+}
+
+.mainSectionProjectsAllProjects a,
+.mainSectionBlogContainerHyperlinks  a
+ {
+    text-decoration: none;
+    color: $color_3;
+    &:hover {
+      border-bottom: 2px solid $color_1;
+    }
+    & :active,
+    :visited {
+      color: $color_3;
+    }
+  }
+
+
+
+
+.mainSectionBlogContainerHyperlinks {
+   
+    &:hover {
+      border-bottom: 2px solid $color_1;
+    }
+}
