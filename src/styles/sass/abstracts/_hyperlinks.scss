@@ -1,8 +1,8 @@
 @use "../abstracts/colors" as *;
 
-.menuNavigation {
-  a {
-    margin-right: 5.25rem;
+.menuNavigation{
+   a {
+    margin-right: 5.25rem; /* Espaço entre cada elemento na horizontal */
     text-decoration: none;
     color: $color_1;
     &:hover {
@@ -13,9 +13,9 @@
       color: $color_1;
     }
   }
-}
+ }
 
-.menuNavigationAside {
+ .menuNavigationAside{
   a {
     color: $color_1;
     &:hover {
@@ -29,23 +29,25 @@
 }
 
 .mainSectionProjectsAllProjects a,
-.mainSectionBlogContainerHyperlinks a {
-  text-decoration: none;
-  color: $color_3;
-  &:hover {
-    border-bottom: 2px solid $color_1;
-  }
-  & :active,
-  :visited {
+.mainSectionBlogContainerHyperlinks  a
+ {
+    text-decoration: none;
     color: $color_3;
+    &:hover {
+      border-bottom: 2px solid $color_1;
+    }
+    & :active,
+    :visited {
+      color: $color_3;
+    }
   }
-}
+
 
 
 
 .mainSectionBlogContainerHyperlinks {
-  text-decoration: none;
-  &:hover {
-    width: 8rem;
-  }
+   
+    &:hover {
+      border-bottom: 2px solid $color_1;
+    }
 }
