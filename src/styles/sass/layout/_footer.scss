@@ -1,0 +1,11 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/hyperlinks" as *;
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 10em;
+}
+
+
+

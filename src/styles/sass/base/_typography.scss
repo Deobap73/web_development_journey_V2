@@ -42,7 +42,6 @@ body {
   }
 }
 
-
 .sectionPresentationsboxparagraph {
   font-size: 1em;
   text-align: center;
@@ -105,12 +104,42 @@ body {
   }
   .mainSectionBlogContainerArticlesOldArticleTitle {
     color: $color_3;
-    margin: 0.5em .5em;
+    margin: 0.5em 0.5em;
     font-size: 1.16em;
   }
-  .mainSectionBlogContainerArticlesOldAArticleBlogArticle{
-    margin: 0.5em .5em;
-    font-size: .8em;
+  .mainSectionBlogContainerArticlesOldAArticleBlogArticle {
+    margin: 0.5em 0.5em;
+    font-size: 0.8em;
     text-align: justify;
+  }
+}
+.mainSectionContacts {
+
+  .mainSectionContactsDetails {
+    .mainSectionContactsDetailsSubTitle {
+      color: $color_3;
+      font-size: 0.8em;
+    }
+    .mainSectionContactsDetailsTitle{
+      
+      font-size: 3.5em;
+    }
+    .subSectionContactsDetails{
+      .subSectionContactsDetailsIcon{
+        color: $color_3;
+      font-size: 1.5em;
+      }
+    }
+  }
+
+  .mainSectionContactsForm {
+    
+    h3 {
+      color: $color_3;
+      font-size: 0.8em;
+    }
+    h2{
+      font-size: 3.5em;
+    }
   }
 }
