@@ -89,8 +89,8 @@
         height: 4em;
         border-radius: 30em;
         overflow: hidden;
-        border: 2px solid $color_1;
-        box-shadow: 2px 2px 2px 1px $color_4;
+        // border: 2px solid $color_1;
+        box-shadow: -4px 1px 7px -1px $color_4;
         h2 {
           margin: 2em;
         }
@@ -109,7 +109,7 @@
         justify-content: space-around;
         align-items: flex-start;
         border-right: 2px solid $color_2;
-        box-shadow: 0px 0px 1px 1px $color_4;
+        box-shadow: -4px 1px 7px -1px $color_4;
         width: 45%;
         height: 45%;
         .subMainPersonalProjectsBoxContentInfo {
@@ -188,7 +188,7 @@
       overflow: hidden;
       border-radius: 2em;
       border-right: 2px solid $color_2;
-      box-shadow: 0px 0px 1px 1px $color_4;
+      box-shadow: -4px 1px 7px -1px $color_4;
     }
   }
 }
@@ -224,6 +224,7 @@
       display: flex;
       flex-direction: column;
       height: 41.5rem;
+      box-shadow: -4px 1px 7px -1px $color_4;
       .mainSectionBlogContainerArticlesDate {
         position: absolute;
         width: 150px;
@@ -285,6 +286,31 @@
     }
     .mainSectionBlogContainerFifthOldArticle {
       grid-area: fifthOldArticle;
+    }
+  }
+}
+
+.mainSectionContacts {
+  background: $background-color_4;
+  margin: 10rem 0;
+  .mainSectionContactsContainer {
+    display: flex;
+    .mainSectionContactsDetails {
+      margin: 10rem 10.5rem;
+      width: 45%;
+      height: 41.5rem;
+      .subSectionContactsDetails {
+        display: flex;
+        align-items: center;
+        margin: 2em 0;
+        .subSectionContactsDetailsIcon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 4em;
+          height: 2em;
+        }
+      }
     }
   }
 }
