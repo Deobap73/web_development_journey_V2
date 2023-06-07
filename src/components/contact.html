@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Meta description -->
+    <meta
+      name="description"
+      content="Author: Deolindo Baptista,
+               developer: Deolindo Baptista, Category:Personal web page" />
+
+    <!-- Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Import Favicon -->
+    <link rel="icon" href="../assets/images/deo_icon.ico" type="image/x-icon" />
+    <!-- font awesome links -->
+    <title>web-development-journey-V2-contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- IMPORT RESET CSS: -->
+    <link rel="stylesheet" href="../styles/css/normalize.css" />
+    <!-- IMPORT CSS style  -->
+    <link rel="stylesheet" href="../styles/css/main.css" />
+  </head>
+<body>
+  <header class="headerGlobal">
+    <div class="logo">
+      <h2>Deo</h2>
+    </div>
+    <nav class="menuNavigation">
+      <a href="../index.html">Home</a>
+      <a href="../components/about.html">About</a>
+      <a href="../components/projects.html">Projects</a>
+      <a href="../components/blog.html">Blog</a>
+      <a href="../components/contact.html">Contacts</a>
+      <div class="search">
+        <i class="fas fa-search" onclick="toggleSearch()"></i>
+        <form id="searchForm" onsubmit="submitSearch(event)">
+          <input type="text" placeholder="Search" id="searchInput" />
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <aside class="asideGlobal">
+    <div class="menuNavigationAsideGlobal">
+      <div id="burger-menu">
+        <div class="burgerMenu">
+          <span class="bar one"></span>
+          <span class="bar two"></span>
+          <span class="bar three"></span>
+        </div>
+      </div>
+      <div id="menuNavigationAside" class="menuNavigationAside">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="menuNavigationAsideMedia">
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+  </aside>
+  <footer>
+    <i class="fa-regular fa-copyright"></i>
+    <p>Copyright - Deolindo Baptista | All rights reserved</p>
+  </footer>
+  <script src="../scripts/index.js"></script>
+</body>
+</html>

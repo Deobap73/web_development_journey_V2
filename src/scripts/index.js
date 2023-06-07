@@ -19,7 +19,7 @@ function submitSearch(event) {
 
   alert("Pesquisando por: " + searchQuery);
 }
-//
+// blog post's
 let myObject = {
   initialize: function () {
     let paragraphs = document.getElementsByClassName(
