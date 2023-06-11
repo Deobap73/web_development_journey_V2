@@ -1,11 +1,15 @@
 .headerGlobal {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 6.25rem;
-    background-color: transparent;
-    .logo {
-        margin-left: 5.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10.155vh;
+  background-color: transparent;
+  .logo {
+    margin-left: 5.25rem;
+    img{
+      width: 4.25rem;
     }
+    
+  }
 }

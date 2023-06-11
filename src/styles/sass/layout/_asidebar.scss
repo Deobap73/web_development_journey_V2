@@ -20,7 +20,11 @@
     justify-content: space-evenly;
     height: 20%;
     .fa-brands {
+      font-size: 1.5em;
       transform: rotate(-90deg);
+      &:hover{
+        color: $color_3;
+      }
     }
   }
 }

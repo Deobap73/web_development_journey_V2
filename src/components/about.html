@@ -26,58 +26,384 @@
     <!-- IMPORT CSS style  -->
     <link rel="stylesheet" href="../styles/css/main.css" />
   </head>
-<body>
-  <header class="headerGlobal">
-    <div class="logo">
-      <h2>Deo</h2>
-    </div>
-    <nav class="menuNavigation">
-      <a href="../index.html">Home</a>
-      <a href="../components/about.html">About</a>
-      <a href="../components/projects.html">Projects</a>
-      <a href="../components/blog.html">Blog</a>
-      <a href="../components/contact.html">Contacts</a>
-      <div class="search">
-        <i class="fas fa-search" onclick="toggleSearch()"></i>
-        <form id="searchForm" onsubmit="submitSearch(event)">
-          <input type="text" placeholder="Search" id="searchInput" />
-          <button type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
-      </div>
-    </nav>
-  </header>
+  <body>
+    <header class="headerGlobal">
+      <section class="logo">
+        <img src="../assets/images/deo_iconBW.webp" alt="" />
+      </section>
+      <nav class="menuNavigation">
+        <a href="../index.html">Home</a>
+        <a href="../components/about.html">About</a>
+        <a href="../components/projects.html">Projects</a>
+        <a href="../components/blog.html">Blog</a>
+        <a href="../components/contact.html">Contacts</a>
+        <section class="search">
+          <i class="fas fa-search" onclick="toggleSearch()"></i>
+          <form id="searchForm" onsubmit="submitSearch(event)">
+            <input type="text" placeholder="Search" id="searchInput" />
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </section>
+      </nav>
+    </header>
 
-  <aside class="asideGlobal">
-    <div class="menuNavigationAsideGlobal">
-      <div id="burger-menu">
-        <div class="burgerMenu">
-          <span class="bar one"></span>
-          <span class="bar two"></span>
-          <span class="bar three"></span>
-        </div>
-      </div>
-      <div id="menuNavigationAside" class="menuNavigationAside">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="menuNavigationAsideMedia">
-      <i class="fa-brands fa-linkedin"></i>
-      <i class="fa-brands fa-github"></i>
-      <i class="fa-brands fa-instagram"></i>
-    </div>
-  </aside>
-  <footer>
-    <i class="fa-regular fa-copyright"></i>
-    <p>Copyright - Deolindo Baptista | All rights reserved</p>
-  </footer>
-  <script src="../scripts/index.js"></script>
-</body>
+    <aside class="asideGlobal">
+      <section class="menuNavigationAsideGlobal">
+        <section id="burger-menu">
+          <section class="burgerMenu">
+            <span class="bar one"></span>
+            <span class="bar two"></span>
+            <span class="bar three"></span>
+          </section>
+        </section>
+        <section id="menuNavigationAside" class="menuNavigationAside">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </section>
+      </section>
+      <section class="menuNavigationAsideMedia">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </section>
+    </aside>
+
+    <main class="aboutMainGlobal">
+      <section class="aboutPresentation">
+        <section class="aboutPresentationTitle">
+          <h2 class="aboutPresentationName">Deolindo <span>Baptista</span></h2>
+          <h3 class="aboutPresentationDescription">Web Developer</h3>
+        </section>
+        <section class="aboutPresentationButtons">
+          <button class="aboutPresentationButtonCurriculum">Curriculum</button>
+          <button class="aboutPresentationButtonPortfolio">Portfolio</button>
+        </section>
+      </section>
+      <section class="aboutAbout">
+        <h2>About</h2>
+      </section>
+
+      <section class="aboutSkills">
+        <section class="aboutSkillsSoftwareSkills">
+          <section class="aboutSkillsSoftware">
+            <h2 class="aboutSkillsSoftwareTitle">Software skills</h2>
+            <section class="aboutSkillsBox aboutSkillsSoftwareHTML">
+              <i class="aboutSkills-fa-brands fa-brands fa-html5"></i>
+              <h3>HTML</h3>
+              <section class="line-with-icon">
+                <hr />
+                <i
+                  class="aboutSkills-circle-dot circle-dot-html fa-regular fa-circle-dot"></i>
+              </section>
+            </section>
+            <section class="aboutSkillsBox aboutSkillsSoftwareSCSS">
+              <i class="aboutSkills-fa-brands fa-brands fa-css3-alt"></i>
+              <h3>CSS</h3>
+              <section class="line-with-icon">
+                <hr />
+                <i
+                  class="aboutSkills-circle-dot circle-dot-css fa-regular fa-circle-dot"></i>
+              </section>
+            </section>
+
+            <section class="aboutSkillsBox aboutSkillsSoftwareJavaScript">
+              <i class="aboutSkills-fa-brands fa-brands fa-js"></i>
+              <h3>JavaScript</h3>
+              <section class="line-with-icon">
+                <hr />
+                <i
+                  class="aboutSkills-circle-dot circle-dot-js fa-regular fa-circle-dot"></i>
+              </section>
+            </section>
+
+            <section class="aboutSkillsBox aboutSkillsSoftwareReact">
+              <i class="aboutSkills-fa-brands fa-brands fa-react"></i>
+              <h3>React</h3>
+              <section class="line-with-icon">
+                <hr />
+                <i
+                  class="aboutSkills-circle-dot circle-dot-react fa-regular fa-circle-dot"></i>
+              </section>
+            </section>
+
+            <section class="aboutSkillsBox aboutSkillsSoftwarePhotoshop">
+              <i class="aboutSkills-fa-brands fa-solid fa-pencil"></i>
+              <h3>Photoshop</h3>
+              <section class="line-with-icon">
+                <hr />
+                <i
+                  class="aboutSkills-circle-dot circle-dot-ps fa-regular fa-circle-dot"></i>
+              </section>
+            </section>
+          </section>
+
+          <section class="aboutSkillsLanguage">
+            <h2 class="aboutSkillsLanguageTitle">Language</h2>
+            <secton class="aboutSkillsBox aboutSkillsLanguagePortuguese">
+              <h3>Portuguese</h3>
+              <section class="line-with-icon">
+                <hr />
+                <i
+                  class="aboutSkills-circle-dot circle-dot-pt fa-regular fa-circle-dot"></i>
+              </section>
+            </secton>
+            <secton class="aboutSkillsBox aboutSkillsLanguageEnglish">
+              <h3>English</h3>
+              <section class="line-with-icon">
+                <hr />
+                <i
+                  class="aboutSkills-circle-dot circle-dot-en fa-regular fa-circle-dot"></i>
+              </section>
+            </secton>
+            <secton class="aboutSkillsBox aboutSkillsLanguageSpanish">
+              <h3>Spanish</h3>
+              <section class="line-with-icon">
+                <hr />
+                <i
+                  class="aboutSkills-circle-dot circle-dot-sp fa-regular fa-circle-dot"></i>
+              </section>
+            </secton>
+            <secton class="aboutSkillsBox aboutSkillsLanguageGerman">
+              <h3>German</h3>
+              <section class="line-with-icon">
+                <hr />
+                <i
+                  class="aboutSkills-circle-dot circle-dot-g fa-regular fa-circle-dot"></i>
+              </section>
+            </secton>
+            <secton class="aboutSkillsBox aboutSkillsLanguageFrench">
+              <h3>French</h3>
+              <section class="line-with-icon">
+                <hr />
+                <i
+                  class="aboutSkills-circle-dot circle-dot-fr fa-regular fa-circle-dot"></i>
+              </section>
+            </secton>
+          </section>
+          <section class="aboutSkillsPersonal">
+            <h2 class="aboutSkillsPersonalTitle">Personal skills</h2>
+            <p>
+              <span class="word-bullet">Organization</span>
+              <span class="word-bullet">Team Work</span>
+              <span class="word-bullet">Creativity</span>
+            </p>
+          </section>
+        </section>
+
+        <section class="aboutSkillsExperience">
+          <h2 class="aboutSkillsExperienceTitle">Experience</h2>
+          <section class="aboutSkillsExperienceProfessional">
+            <section class="aboutSkillsExperienceBalloon-container">
+              <section class="balloonContainerLine"></section>
+              <section class="balloonContainerBalloon">
+                <p class="balloonContainerContent">1989 to 2005</p>
+              </section>
+            </section>
+            <section class="aboutSkillsExperienceProfessionalDescription">
+              <h3 class="aboutSkillsExperienceProfessionalDescriptionTitle">
+                Araujo Mota & Pereira, Lda, (Portugal)
+              </h3>
+              <p class="aboutSkillsExperienceProfessionalDescriptionText">
+                Store seller
+              </p>
+            </section>
+          </section>
+          <section class="aboutSkillsExperienceProfessional">
+            <section class="aboutSkillsExperienceBalloon-container">
+              <section class="balloonContainerLine"></section>
+              <section class="balloonContainerBalloon">
+                <p class="balloonContainerContent">2006 to 2009</p>
+              </section>
+            </section>
+            <section class="aboutSkillsExperienceProfessionalDescription">
+              <h3 class="aboutSkillsExperienceProfessionalDescriptionTitle">
+                Araujo Mota & Pereira, Lda, (Portugal)
+              </h3>
+              <p class="aboutSkillsExperienceProfessionalDescriptionText">
+                Responsible for storing warehouse
+              </p>
+            </section>
+          </section>
+          <section class="aboutSkillsExperienceProfessional">
+            <section class="aboutSkillsExperienceBalloon-container">
+              <section class="balloonContainerLine"></section>
+              <section class="balloonContainerBalloon">
+                <p class="balloonContainerContent">2010 to 2017</p>
+              </section>
+            </section>
+            <section class="aboutSkillsExperienceProfessionalDescription">
+              <h3 class="aboutSkillsExperienceProfessionalDescriptionTitle">
+                Araujo Mota & Pereira, Lda, (Portugal)
+              </h3>
+              <p class="aboutSkillsExperienceProfessionalDescriptionText">
+                Management Advising
+              </p>
+            </section>
+          </section>
+          <section class="aboutSkillsExperienceProfessional">
+            <section class="aboutSkillsExperienceBalloon-container">
+              <section class="balloonContainerLine"></section>
+              <section class="balloonContainerBalloon">
+                <p class="balloonContainerContent">2018 to 2019</p>
+              </section>
+            </section>
+            <section class="aboutSkillsExperienceProfessionalDescription">
+              <h3 class="aboutSkillsExperienceProfessionalDescriptionTitle">
+                Araujo Mota & Pereira, Lda, (Portugal)
+              </h3>
+              <p class="aboutSkillsExperienceProfessionalDescriptionText">
+                Management Advising and Responsible for General Regime Data
+                Protection
+              </p>
+            </section>
+          </section>
+          <section class="aboutSkillsExperienceProfessional">
+            <section class="aboutSkillsExperienceBalloon-container">
+              <section class="balloonContainerLine"></section>
+              <section class="balloonContainerBalloon">
+                <p class="balloonContainerContent">2019 to 2022</p>
+              </section>
+            </section>
+            <section class="aboutSkillsExperienceProfessionalDescription">
+              <h3 class="aboutSkillsExperienceProfessionalDescriptionTitle">
+                Reichhart Logistik Gmbh (germany)
+              </h3>
+              <p class="aboutSkillsExperienceProfessionalDescriptionText">
+                truck Driver
+              </p>
+            </section>
+          </section>
+          <section class="aboutSkillsExperienceProfessional">
+            <section class="aboutSkillsExperienceBalloon-container">
+              <!-- <section class="balloonContainerLine"></section> -->
+              <section class="balloonContainerBalloon">
+                <p class="balloonContainerContent">2023</p>
+              </section>
+            </section>
+            <section class="aboutSkillsExperienceProfessionalDescription">
+              <h3 class="aboutSkillsExperienceProfessionalDescriptionTitle">
+                DCI Digital Career Institute (Germany)
+              </h3>
+              <p class="aboutSkillsExperienceProfessionalDescriptionText">
+                Web Developer formation
+              </p>
+            </section>
+          </section>
+
+          <section class="aboutSkillsExperienceEducation">
+            <h2 class="aboutSkillsExperienceEducationTitle">Education</h2>
+            <section>
+              <h3 class="subAboutSkillsExperienceEducationTitle">
+                High School
+              </h3>
+              <p class="aboutSkillsExperienceEducationText">
+                Escola Secundaria Augusto Gomes (Portugal)
+              </p>
+            </section>
+            <section>
+              <h3 class="subAboutSkillsExperienceEducationTitle">
+                Professional training in data Protection - General Regulation
+              </h3>
+              <p class="aboutSkillsExperienceEducationText">
+                SAGE Institute (Portugal)
+              </p>
+            </section>
+            <section>
+              <h3 class="subAboutSkillsExperienceEducationTitle">
+                General Cybersecurity Course
+              </h3>
+              <p class="aboutSkillsExperienceEducationText">
+                National Security Office (Portugal)
+              </p>
+            </section>
+          </section>
+        </section>
+
+        <section class="aboutSkillsWhatCanDo">
+          <section class="aboutSkillsWhatCanDoSkills">
+            <h2 class="aboutSkillsPersonalTitle">What can I Do?</h2>
+            <p>
+              <span class="word-bullet">Intermediate level in Lightroom</span>
+              <span class="word-bullet">Image Editing</span>
+              <span class="word-bullet">SketchUp - 3D Modeling</span>
+              <span class="word-bullet">Blender</span>
+              <span class="word-bullet">Blender</span>
+            </p>
+          </section>
+          <section class="aboutSkillsWhatCanDoDesignSkills">
+            <h2 class="aboutSkillsPersonalTitle">Code Skills</h2>
+            <p>
+              <span class="word-bullet">Creativity</span>
+              <span class="word-bullet">Planning</span>
+              <span class="word-bullet">Strategy</span>
+              <span class="word-bullet">Layout</span>
+              <span class="word-bullet">Grid</span>
+              <span class="word-bullet">flex</span>
+              <span class="word-bullet">Scss</span>
+            </p>
+          </section>
+          <section class="aboutSkillsWhatCanDoHobbies">
+            <h2 class="aboutSkillsPersonalTitle">Hobbies & Interests</h2>
+            <section class="aboutSkillsWhatCanDoHobbiesSections">
+              <section
+                class="aboutSkillsWhatCanDoHobbiesSectionsContainer Travel">
+                <section class="aboutSkillsWhatCanDoHobbiesSectionsIcon">
+                  <i class="fa-solid fa-plane"></i>
+                </section>
+                <p>Travel</p>
+              </section>
+              <section
+                class="aboutSkillsWhatCanDoHobbiesSectionsContainer Volleyball">
+                <section class="aboutSkillsWhatCanDoHobbiesSectionsIcon">
+                  <i class="fa-solid fa-volleyball"></i>
+                </section>
+                <p>Volleyball</p>
+              </section>
+              <section
+                class="aboutSkillsWhatCanDoHobbiesSectionsContainer Swim">
+                <section class="aboutSkillsWhatCanDoHobbiesSectionsIcon">
+                  <i class="fa-solid fa-person-swimming"></i>
+                </section>
+                <p>Swim</p>
+              </section>
+              <section
+                class="aboutSkillsWhatCanDoHobbiesSectionsContainer Photography">
+                <section class="aboutSkillsWhatCanDoHobbiesSectionsIcon">
+                  <i class="fa-solid fa-camera"></i>
+                </section>
+                <p>Photography</p>
+              </section>
+              <section
+                class="aboutSkillsWhatCanDoHobbiesSectionsContainer Plane-Spotting">
+                <section class="aboutSkillsWhatCanDoHobbiesSectionsIcon">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </section>
+                <p>Plane Spotting</p>
+              </section>
+              <section
+                class="aboutSkillsWhatCanDoHobbiesSectionsContainer Architecture">
+                <section class="aboutSkillsWhatCanDoHobbiesSectionsIcon">
+                  <i class="fa-solid fa-solar-panel"></i>
+                </section>
+                <p>Architecture</p>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <i class="fa-regular fa-copyright"></i>
+      <p>Copyright - Deolindo Baptista | All rights reserved</p>
+    </footer>
+    <script src="../scripts/index.js"></script>
+  </body>
 </html>

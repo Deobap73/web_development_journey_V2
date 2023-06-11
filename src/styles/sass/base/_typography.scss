@@ -23,7 +23,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100 as *;0,200 as *;0,400 as *;0,600 as *;0,800 as *;1,400 as *;1,600 as *;1,800&display=swap");
 
 body {
-  font-family: "../Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
   line-height: 1.6;
   color: $color_1;
@@ -114,32 +114,101 @@ body {
   }
 }
 .mainSectionContacts {
-
   .mainSectionContactsDetails {
     .mainSectionContactsDetailsSubTitle {
       color: $color_3;
       font-size: 0.8em;
     }
-    .mainSectionContactsDetailsTitle{
-      
+    .mainSectionContactsDetailsTitle {
       font-size: 3.5em;
     }
-    .subSectionContactsDetails{
-      .subSectionContactsDetailsIcon{
+    .subSectionContactsDetails {
+      .subSectionContactsDetailsIcon {
         color: $color_3;
-      font-size: 1.5em;
+        font-size: 1.5em;
       }
     }
   }
 
   .mainSectionContactsForm {
-    
     h3 {
       color: $color_3;
       font-size: 0.8em;
     }
-    h2{
+    h2 {
       font-size: 3.5em;
+    }
+  }
+}
+
+.aboutMainGlobal {
+  .aboutPresentation {
+    .aboutPresentationTitle {
+      .aboutPresentationName {
+        font-size: 4rem;
+        font-weight: 400;
+        line-height: 0.8;
+        & span {
+          font-size: 8rem;
+          font-weight: 800;
+        }
+      }
+      .aboutPresentationDescription {
+        font-size: 3rem;
+        font-weight: 100;
+        letter-spacing: 0.5rem;
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .aboutSkills {
+    .aboutSkillsSoftware,
+    .aboutSkillsLanguage,
+    .aboutSkillsPersonal,
+    .aboutSkillsExperience,
+    .aboutSkillsExperienceEducation,
+    .aboutSkillsWhatCanDoSkills,
+    .aboutSkillsWhatCanDoDesignSkills,
+    .aboutSkillsWhatCanDoHobbies {
+      h2 {
+        font-weight: 200;
+        text-decoration: underline;
+        text-decoration-color: $color_3;
+      }
+      .aboutSkillsBox {
+        h3 {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+  .aboutSkillsExperience {
+    .aboutSkillsExperienceProfessional {
+      .aboutSkillsExperienceBalloon-container {
+        .balloonContainerBalloon {
+          font-size: 0.75em;
+          line-height: 0.9em;
+          text-align: center;
+        }
+      }
+    }
+
+    .aboutSkillsExperienceProfessionalDescriptionTitle,
+    .subAboutSkillsExperienceEducationTitle {
+      font-size: 1em;
+      font-weight: 800;
+      margin-top: 0.9em;
+    }
+    .aboutSkillsExperienceProfessionalDescriptionText,
+    .aboutSkillsExperienceEducationText {
+      font-size: 0.8em;
+    }
+  }
+  .aboutSkillsWhatCanDoSkills,
+  .aboutSkillsWhatCanDoDesignSkills {
+    p {
+      line-height: 2.8;
     }
   }
 }

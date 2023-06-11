@@ -1,7 +1,24 @@
+@use "../abstracts/colors" as *;
+
 .mainPersonaDownloadCvButton {
   font-size: 2em;
-    width: 2em;
-    height: 2em;
+  width: 2em;
+  height: 2em;
+  border-radius: 30em;
+  overflow: hidden;
+}
+.aboutPresentationButtons {
+  .aboutPresentationButtonCurriculum,
+  .aboutPresentationButtonPortfolio {
+    width: 10em;
+    height: 3em;
     border-radius: 30em;
     overflow: hidden;
+    box-shadow: -4px 1px 7px -1px $color_2;
+    background-color: $background-color_4;
+    color: $color_1;
+    &:hover{
+      color: $color_3;  
+    }
   }
+}
