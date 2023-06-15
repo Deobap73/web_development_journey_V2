@@ -41,3 +41,53 @@
     }
   }
 }
+
+.contactMainContactForm {
+  height: 42rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -1px 13px 25px -1px #000000cf;
+
+  h2 {
+   margin-top: 1em;
+  }
+
+  .contact-wrap {
+    color: $color_1;
+    overflow: auto;
+    float: left;
+    .contact-area {
+      padding: 1.7em;
+      input,
+      textarea {
+        position: relative;
+        padding: 0.313em;
+        width: 100%;
+        color: $color_1;
+        background-color: transparent;
+        border-top: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-bottom: 1px solid $color_1;
+        border-right: 1px solid transparent;
+        margin-bottom: 1em;
+        &:focus {
+          background-color: #333;
+          border-top: 1px solid transparent;
+          border-left: 1px solid transparent;
+          border-bottom: 1px solid $color_1;
+          border-right: 1px solid transparent;
+        }
+        &.submit-button {
+          width: 10em;
+          align-self: center;
+
+          &:hover {
+            color: $color_3;
+            border-bottom: 1px solid $color_3;
+          }
+        }
+      }
+    }
+  }
+}

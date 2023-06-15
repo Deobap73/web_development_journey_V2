@@ -1,0 +1,24 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/hyperlinks" as *;
+
+.contactMainGlobal {
+  display: flex;
+  align-items: center;
+  height: 79.5vh;
+  .contactMainContactMe,
+  .contactMainContactForm {
+    width: 50%;
+    margin: 1rem 10rem;
+  }
+
+  .contactMainContactMe {
+    text-align: center;
+    
+    .subContactMainContactMePresentation {
+        margin: 2em 0;
+    }
+  }
+
+
+ 
+}

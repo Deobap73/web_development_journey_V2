@@ -160,7 +160,6 @@ body {
 footer {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 2em 10em;
 }
 
@@ -203,56 +202,6 @@ footer {
 .mainSectionContactsForm .mainSectionForm .mainSectionFormInputButton:hover {
   background-color: #2c2d32;
   color: #ffffff;
-}
-
-.contactMainContactForm {
-  height: 42rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: -1px 13px 25px -1px rgba(0, 0, 0, 0.8117647059);
-}
-.contactMainContactForm h2 {
-  margin-top: 1em;
-}
-.contactMainContactForm .contact-wrap {
-  color: #ffffff;
-  overflow: auto;
-  float: left;
-}
-.contactMainContactForm .contact-wrap .contact-area {
-  padding: 1.7em;
-}
-.contactMainContactForm .contact-wrap .contact-area input,
-.contactMainContactForm .contact-wrap .contact-area textarea {
-  position: relative;
-  padding: 0.313em;
-  width: 100%;
-  color: #ffffff;
-  background-color: transparent;
-  border-top: 1px solid transparent;
-  border-left: 1px solid transparent;
-  border-bottom: 1px solid #ffffff;
-  border-right: 1px solid transparent;
-  margin-bottom: 1em;
-}
-.contactMainContactForm .contact-wrap .contact-area input:focus,
-.contactMainContactForm .contact-wrap .contact-area textarea:focus {
-  background-color: #333;
-  border-top: 1px solid transparent;
-  border-left: 1px solid transparent;
-  border-bottom: 1px solid #ffffff;
-  border-right: 1px solid transparent;
-}
-.contactMainContactForm .contact-wrap .contact-area input.submit-button,
-.contactMainContactForm .contact-wrap .contact-area textarea.submit-button {
-  width: 10em;
-  align-self: center;
-}
-.contactMainContactForm .contact-wrap .contact-area input.submit-button:hover,
-.contactMainContactForm .contact-wrap .contact-area textarea.submit-button:hover {
-  color: #81c2ee;
-  border-bottom: 1px solid #81c2ee;
 }
 
 .headerGlobal {
@@ -869,23 +818,6 @@ footer {
   color: #000000;
 }
 
-.contactMainGlobal {
-  display: flex;
-  align-items: center;
-  height: 79.5vh;
-}
-.contactMainGlobal .contactMainContactMe,
-.contactMainGlobal .contactMainContactForm {
-  width: 50%;
-  margin: 1rem 10rem;
-}
-.contactMainGlobal .contactMainContactMe {
-  text-align: center;
-}
-.contactMainGlobal .contactMainContactMe .subContactMainContactMePresentation {
-  margin: 2em 0;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
@@ -1073,17 +1005,4 @@ body {
 .aboutMainGlobal .aboutSkillsWhatCanDoSkills p,
 .aboutMainGlobal .aboutSkillsWhatCanDoDesignSkills p {
   line-height: 2.8;
-}
-
-.contactMainGlobal .subContactMainContactMePresentation h2,
-.contactMainGlobal .contactMainContactForm h2 {
-  font-size: 5rem;
-  font-weight: 400;
-}
-.contactMainGlobal .subContactMainContactMePresentationText1,
-.contactMainGlobal .subContactMainContactMePresentationText2 {
-  font-weight: 200;
-}
-.contactMainGlobal .subContactMainContactMeAdresses section {
-  margin-top: 1em;
 }

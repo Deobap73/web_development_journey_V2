@@ -26,58 +26,135 @@
     <!-- IMPORT CSS style  -->
     <link rel="stylesheet" href="../styles/css/main.css" />
   </head>
-<body>
-  <header class="headerGlobal">
-    <div class="logo">
-      <img src="../assets/images/deo_iconBW.webp" alt="">
-    </div>
-    <nav class="menuNavigation">
-      <a href="../index.html">Home</a>
-      <a href="../components/about.html">About</a>
-      <a href="../components/projects.html">Projects</a>
-      <a href="../components/blog.html">Blog</a>
-      <a href="../components/contact.html">Contacts</a>
-      <div class="search">
-        <i class="fas fa-search" onclick="toggleSearch()"></i>
-        <form id="searchForm" onsubmit="submitSearch(event)">
-          <input type="text" placeholder="Search" id="searchInput" />
-          <button type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
-      </div>
-    </nav>
-  </header>
+  <body>
+    <header class="headerGlobal">
+      <section class="logo">
+        <img src="../assets/images/deo_iconBW.webp" alt="" />
+      </section>
+      <nav class="menuNavigation">
+        <a href="../index.html">Home</a>
+        <a href="../components/about.html">About</a>
+        <a href="../components/projects.html">Projects</a>
+        <a href="../components/blog.html">Blog</a>
+        <a href="../components/contact.html">Contacts</a>
+        <section class="search">
+          <i class="fas fa-search" onclick="toggleSearch()"></i>
+          <form id="searchForm" onsubmit="submitSearch(event)">
+            <input type="text" placeholder="Search" id="searchInput" />
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </section>
+      </nav>
+    </header>
 
-  <aside class="asideGlobal">
-    <div class="menuNavigationAsideGlobal">
-      <div id="burger-menu">
-        <div class="burgerMenu">
-          <span class="bar one"></span>
-          <span class="bar two"></span>
-          <span class="bar three"></span>
-        </div>
-      </div>
-      <div id="menuNavigationAside" class="menuNavigationAside">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="menuNavigationAsideMedia">
-      <i class="fa-brands fa-linkedin"></i>
-      <i class="fa-brands fa-github"></i>
-      <i class="fa-brands fa-instagram"></i>
-    </div>
-  </aside>
-  <footer>
-    <i class="fa-regular fa-copyright"></i>
-    <p>Copyright - Deolindo Baptista | All rights reserved</p>
-  </footer>
-  <script src="../scripts/index.js"></script>
-</body>
+    <aside class="asideGlobal">
+      <section class="menuNavigationAsideGlobal">
+        <section id="burger-menu">
+          <section class="burgerMenu">
+            <span class="bar one"></span>
+            <span class="bar two"></span>
+            <span class="bar three"></span>
+          </section>
+        </section>
+        <section id="menuNavigationAside" class="menuNavigationAside">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </section>
+      </section>
+      <section class="menuNavigationAsideMedia">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </section>
+    </aside>
+
+    <main class="contactMainGlobal">
+      <section class="contactMainContactMe">
+        <section class="subContactMainContactMePresentation">
+          <h2 class="subContactMainContactMePresentationTitle">ContactMe</h2>
+          <p class="subContactMainContactMePresentationText1">
+            Thank you for visiting my website! Whether you want to discuss a
+            potential collaboration, inquire about my services, or simply share
+            your thoughts, feel free to reach out to me using the contact
+            provided aside. I aim to respond to all inquiries within 24 hours.
+            Your feedback and input are valuable to me, and I appreciate your
+            interest in connecting. 
+          </p>
+          <p class="subContactMainContactMePresentationText2" >I look forward to connecting with you soon!</p>
+        </section>
+
+        <section class="subContactMainContactMeAdresses">
+          <section>
+           <h3>Adress</h3>
+          <p>Pram 2a, Pocking, Germany</p> 
+          </section>
+          <section>
+            <h3>Phone</h3>
+          <p>+49 176 34644129</p>
+          </section>
+          <section>
+            <h3>E-Mail</h3>
+          <p>deolindoalberto.dasilvaBaptista@gmail.com</p> 
+          </section>      
+        </section>
+      </section>
+
+      <section class="contactMainContactForm">
+        <h2>ContactMe</h2>
+
+        <section class="contact-wrap">
+          <section class="contact-area">
+            <form
+              onsubmit="sendMail(); reset(); return;"
+              autocomplete="off"
+              class="mainSectionForm">
+              <input
+                type="text"
+                name="Name"
+                id="Name"
+                placeholder="Your Name" />
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                class="mainSectionFormInput" />
+
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Your Subject" />
+
+              <textarea
+                name="message"
+                id="message"
+                rows="7"
+                placeholder="Message"></textarea>
+
+              <input
+                type="submit"
+                value="Submit here"
+                class="submit-button"
+                onclick="sendMail()" />
+            </form>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <i class="fa-regular fa-copyright"></i>
+      <p>Copyright - Deolindo Baptista | All rights reserved</p>
+    </footer>
+    <script src="../scripts/index.js"></script>
+  </body>
 </html>

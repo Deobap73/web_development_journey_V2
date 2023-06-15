@@ -16,6 +16,15 @@ $background-color_2: #ffffff;
 $background-color_3: #555658;
 $background-color_4: #555658a2;
 $background-color_5: #2c2d32;
+$background-color_6: linear-gradient(
+  to right,
+  #121212 0%,
+  24.252136051654816%,
+  #404040 48.50427210330963%,
+  74.25213605165482%,
+  #111111 100%
+);
+
 $background_1: url(../../../assets/images/backgroundDesktop.webp); // main background
 $background_2: url(../../../assets/images/computerInTheDark.webp); // main background
 $background_3: url(../../../assets/images/aboutMeBackground.webp); // main background
