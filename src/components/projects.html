@@ -26,58 +26,72 @@
     <!-- IMPORT CSS style  -->
     <link rel="stylesheet" href="../styles/css/main.css" />
   </head>
-<body>
-  <header class="headerGlobal">
-    <div class="logo">
-      <img src="../assets/images/deo_iconBW.webp" alt="">
-    </div>
-    <nav class="menuNavigation">
-      <a href="../index.html">Home</a>
-      <a href="../components/about.html">About</a>
-      <a href="../components/projects.html">Projects</a>
-      <a href="../components/blog.html">Blog</a>
-      <a href="../components/contact.html">Contacts</a>
-      <div class="search">
-        <i class="fas fa-search" onclick="toggleSearch()"></i>
-        <form id="searchForm" onsubmit="submitSearch(event)">
-          <input type="text" placeholder="Search" id="searchInput" />
-          <button type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
+  <body>
+    <header class="headerGlobal">
+      <div class="logo">
+        <img src="../assets/images/deo_iconBW.webp" alt="" />
       </div>
-    </nav>
-  </header>
+      <nav class="menuNavigation">
+        <a href="../index.html">Home</a>
+        <a href="../components/about.html">About</a>
+        <a href="../components/projects.html">Projects</a>
+        <a href="../components/blog.html">Blog</a>
+        <a href="../components/contact.html">Contacts</a>
+        <div class="search">
+          <i class="fas fa-search" onclick="toggleSearch()"></i>
+          <form id="searchForm" onsubmit="submitSearch(event)">
+            <input type="text" placeholder="Search" id="searchInput" />
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
 
-  <aside class="asideGlobal">
-    <div class="menuNavigationAsideGlobal">
-      <div id="burger-menu">
-        <div class="burgerMenu">
-          <span class="bar one"></span>
-          <span class="bar two"></span>
-          <span class="bar three"></span>
+    <aside class="asideGlobal">
+      <div class="menuNavigationAsideGlobal">
+        <div id="burger-menu">
+          <div class="burgerMenu">
+            <span class="bar one"></span>
+            <span class="bar two"></span>
+            <span class="bar three"></span>
+          </div>
+        </div>
+        <div id="menuNavigationAside" class="menuNavigationAside">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
         </div>
       </div>
-      <div id="menuNavigationAside" class="menuNavigationAside">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
+      <div class="menuNavigationAsideMedia">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-instagram"></i>
       </div>
-    </div>
-    <div class="menuNavigationAsideMedia">
-      <i class="fa-brands fa-linkedin"></i>
-      <i class="fa-brands fa-github"></i>
-      <i class="fa-brands fa-instagram"></i>
-    </div>
-  </aside>
-  <footer>
-    <i class="fa-regular fa-copyright"></i>
-    <p>Copyright - Deolindo Baptista | All rights reserved</p>
-  </footer>
-  <script src="../scripts/index.js"></script>
-</body>
+    </aside>
+
+    <main>
+      <section class="projectsMainGlobal">
+        <section class="projectsMainGlobalPresentationImage"></section>
+        <section class="projectsMainGlobalPresentationTitle">
+          <h2>P</h2>
+          <h3>rojects</h3>
+        </section>
+      </section>
+      <section class="projectstSubMainGlobal test">
+        <h3>projects</h3>
+      </section>
+    </main>
+
+    <footer>
+      <i class="fa-regular fa-copyright"></i>
+      <p>Copyright - Deolindo Baptista | All rights reserved</p>
+    </footer>
+    <script src="../scripts/index.js"></script>
+  </body>
 </html>

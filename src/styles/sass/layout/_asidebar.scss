@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100px;
+  width: 5.2vw;
   height: 100vh;
   background-color: transparent;
   border-right: 2px solid $color_2;
@@ -18,9 +18,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 20%;
+    height: 20rem;
     .fa-brands {
-      font-size: 1.5em;
+      font-size: 1.5rem;
       transform: rotate(-90deg);
       &:hover{
         color: $color_3;
